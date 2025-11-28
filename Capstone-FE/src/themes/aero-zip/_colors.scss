@@ -1,0 +1,31 @@
+@use "./variables/colors_variables" as colors_variables;
+
+@each $name, $color in colors_variables.$colors {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background: $color;
+  }
+
+  .border-#{$name} {
+    border-color: $color;
+  }
+
+  .border-top-#{$name} {
+    border-top-color: $color;
+  }
+
+  .border-right-#{$name} {
+    border-right-color: $color;
+  }
+
+  .border-bottom-#{$name} {
+    border-bottom-color: $color;
+  }
+
+  .border-left-#{$name} {
+    border-left-color: $color;
+  }
+}
