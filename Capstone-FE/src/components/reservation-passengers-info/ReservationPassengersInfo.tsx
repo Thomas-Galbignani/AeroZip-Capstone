@@ -41,7 +41,7 @@ const ReservationPassengersInfo: React.FC<ReservationPassengersInfoProps> = ({
   const handlePassengersInfoChange = (
     index: number,
     field: keyof PassengerData,
-    value: string
+    value: string | number
   ) => {
     setPassengers(prev => {
       const updated = [...prev];
@@ -146,7 +146,7 @@ const ReservationPassengersInfo: React.FC<ReservationPassengersInfoProps> = ({
                       handlePassengersInfoChange(
                         index,
                         'baggageNumbers',
-                        e.target.value
+                        parseInt(e.target.value)
                       )
                     }
                   />
