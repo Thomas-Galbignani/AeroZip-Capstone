@@ -1,0 +1,42 @@
+@use '../../themes/aero-zip/variables/colors_variables' as colors_variables;
+
+.selected-flights {
+  &__flights {
+    border: 1px solid colors_variables.get-color('purple-extra-light');
+    //   padding: 1rem;
+    background-color: colors_variables.get-color('true-white');
+    border-radius: 8px;
+
+    &__card {
+      padding: 1rem;
+      border-bottom: 1px solid colors_variables.get-color('purple-extra-light');
+      width: 100%;
+
+      &__logo {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      &__text {
+        font-size: 0.9rem;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: colors_variables.get-color('grey-900');
+
+        &--light {
+          font-size: 0.9rem;
+          line-height: 100%;
+          letter-spacing: 0px;
+          color: colors_variables.get-color('grey-400');
+        }
+      }
+    }
+  }
+  &__info {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: right;
+  }
+}

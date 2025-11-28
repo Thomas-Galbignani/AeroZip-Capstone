@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+  
+# production
+build
+dist
+  
+# misc
+.DS_Store
+*.log
+coverage
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# vite
+vite.config.ts.timestamp-*

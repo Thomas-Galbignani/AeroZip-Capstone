@@ -1,0 +1,29 @@
+@use 'sass:map';
+
+$colors: (
+  'true-white': #ffffff,
+  'purple-dark': #1513a0,
+  'purple-blue-gradient': linear-gradient(180deg, #605dec 0%, #2a26d9 100%),
+  'purple-blue': #605dec,
+  'purple-light': #bcbaf7,
+  'purple-extra-light': #e9e8fc,
+  'purple-white': #f6f6fe,
+  'blue': #407aea,
+  'turquoise-gradient': linear-gradient(180deg, #5cd6c0 0%, #22c3a6 100%),
+  'turquoise': #5cd6c0,
+  'pink-gradient': linear-gradient(180deg, #eb568c 0%, #ed5e76 100%),
+  'red': #eb5757,
+  'dark-red': #6d0404,
+  'grey-100': #fafafa,
+  'grey-400': #7c8db0,
+  'grey-900': #27273f,
+  'grey-2': #52527a,
+  // usato come sfondo per i modali o per i messaggi
+  'red-light': #fdefef,
+  'purple-white-light': #fafafe,
+  'deep-green': #007b65,
+);
+
+@function get-color($color-name) {
+  @return map.get($colors, $color-name);
+}
